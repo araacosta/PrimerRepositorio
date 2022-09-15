@@ -385,36 +385,31 @@ h2 {
         "producto4 producto5 producto6";
         margin-top: 2rem;
         justify-items: center;
+        gap: 1rem;
 }
 
 .producto1{
     grid-area: producto1;
-    margin: 1rem;
 }
 
 .producto2{
     grid-area: producto2;
-    margin: 1rem;
 }
 
 .producto3{
     grid-area: producto3;
-    margin: 1rem;
 }
 
 .producto4{
     grid-area: producto4;
-    margin: 1rem;
 }
 
 .producto5{
     grid-area: producto5;
-    margin: 1rem;
 }
 
 .producto6{
     grid-area: producto6;
-    margin: 1rem;
 }
 
 /*Contacto*/
@@ -444,10 +439,6 @@ h2 {
 
     .menuPrincipal img {
         display: none;
-    }
-
-    .bodyIndex {
-        margin: 3rem;
     }
 
     .sectionNosotros{
