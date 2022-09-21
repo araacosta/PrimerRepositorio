@@ -568,5 +568,23 @@ h2 {
     justify-items: center;
  }
 
+ .bg-navbar {
+    background-color: antiquewhite;
+ }
+
+ .btn-primary {
+    background-color:blueviolet;
+    border-color: crimson;
+    transition: all 0.25s ease-in-out;
+
+ }
+ :not(.btn-check)+.btn:hover {
+    background-color:blueviolet;
+    border-color: crimson;
+    transform: scale(0.9);
+
+ }
+
+ }
 
 }
