@@ -21,7 +21,7 @@
  .menuPrincipal ul li {
      list-style: none;
      display: inline-block;
-     background-color: black;
+     background-color: $colorTerciario;
      padding: 0.6rem;
      border-radius: 1rem;
      margin: 0 10px 0 10px;
@@ -641,9 +641,11 @@
          transform: scale(0.9);
      }
 
-     .btn .btn-primary {
-         text-align: center;
-     }
+     .btn-primary {
+        background-color: black;
+        border-color: brown;
+        transition: all 0.25s ease-in-out;
 
+    }
 
  }
