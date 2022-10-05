@@ -96,6 +96,12 @@ $estilos:(
     @include flex;
 }
 
-@mixin flexBase {
-    
+@mixin flexBase ($d, $fd, $fw){
+    display: $d;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+}
+
+.menuPrincipal {
+    @include flexBase(flex, row, wrap)
 }

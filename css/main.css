@@ -68,6 +68,11 @@ body {
 .menuPrincipal {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap; }
+
+.menuPrincipal {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between; }
   .menuPrincipal img {
     height: 150px; }
