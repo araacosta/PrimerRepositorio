@@ -4,3 +4,98 @@ $colorPrincipal: antiquewhite;
 $colorSecundario: #fff;
 
 $colorTerciario: black;
+
+/*condicionales*/
+$fiesta: navidad;
+
+body{
+    @if $fiesta == navidad{
+        background-color: red;
+    }
+    @else if $fiesta == pascuas{
+        background-color: brown;
+    }
+    @else {
+        background-color: antiquewhite;
+    }
+}
+
+/*bucles*/
+@for $i from 1 through 3 {
+    .galeria-#{$i}{
+    background-position: -8px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    }
+    
+}
+
+/*maps*/
+$estilos:(
+    color: violet,
+    alineacion: center,
+    fuente: 15px,
+    padding: 1rem
+);
+
+.footerTienda {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, alineacion);
+    font-size: map-get($estilos,fuente);
+    padding: map-get($estilos, padding);
+
+}
+
+.politicadevolucion{
+    text-align: map-get($estilos, alineacion);
+    font-size: map-get($estilos, fuente);
+    padding: map-get($estilos, padding);
+}
+
+/*extend*/
+.btn-primary{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(185, 84, 139);
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.btn-primaryAceptar{
+    @extend .btn-primary;
+    background-color: green;
+}
+
+.btn-primaryCancelar{
+    @extend .btn-primary;
+    background-color: red;
+}
+
+/*Mixin*/
+@mixin sizes ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+.imagen{
+    @include sizes(500px, 300px)
+}
+
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footerTienda{
+    @include flex;
+}
+
+@mixin flexBase {
+    
+}

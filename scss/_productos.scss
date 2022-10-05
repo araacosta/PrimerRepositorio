@@ -1,0 +1,119 @@
+.tituloProductos {
+    text-align: center;
+    font-size: 30px;
+    background-color: $colorTerciario;
+    color: $colorSecundario;
+    padding: 10px;
+    animation-name: color;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+.producto1 {
+    background-image: url(../multimedia/daniel-olah-UVRz6qJO_qA-unsplash.jpg);
+    background-position: -10px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 200px;
+    height: 200px;
+
+    display: inline-block;
+}
+
+.producto2 {
+    background-image: url(../multimedia/look.jpg);
+    background-position: -10px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 200px;
+    height: 200px;
+
+    display: inline-block;
+}
+
+.producto3 {
+    background-image: url(../multimedia/mahdi-chaghari-RfOBNTnDmJc-unsplash.jpg);
+    background-position: -10px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 200px;
+    height: 200px;
+
+    display: inline-block;
+}
+
+.producto4 {
+    background-image: url(../multimedia/body.jpg);
+    background-position: -10px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 200px;
+    height: 200px;
+
+    display: inline-block;
+}
+
+.producto5 {
+    background-image: url(../multimedia/remera.jpg);
+    background-position: -10px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 200px;
+    height: 200px;
+
+    display: inline-block;
+}
+
+
+.producto6 {
+    background-image: url(../multimedia/jeans.jfif);
+    background-position: -10px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 200px;
+    height: 200px;
+
+    display: inline-block;
+}
+
+.div-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "producto1 producto2 producto3"
+        "producto4 producto5 producto6";
+    margin-top: 2rem;
+    justify-items: center;
+    gap: 1rem;
+.producto1 {
+    grid-area: producto1;
+}
+
+.producto2 {
+    grid-area: producto2;
+}
+
+.producto3 {
+    grid-area: producto3;
+}
+
+.producto4 {
+    grid-area: producto4;
+}
+
+.producto5 {
+    grid-area: producto5;
+}
+
+.producto6 {
+    grid-area: producto6;
+}
+}

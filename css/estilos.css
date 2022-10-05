@@ -21,7 +21,7 @@
  .menuPrincipal ul li {
      list-style: none;
      display: inline-block;
-     background-color: $colorTerciario;
+     background-color: black;
      padding: 0.6rem;
      border-radius: 1rem;
      margin: 0 10px 0 10px;
@@ -258,10 +258,6 @@
      border-style: solid;
  }
 
- .contactanos {
-     text-align: left
- }
-
  .fotolocal {
      background-position: -8px center;
      background-repeat: no-repeat;
@@ -283,10 +279,6 @@
      animation-duration: 5s;
      animation-delay: 3s;
      animation-iteration-count: infinite;
- }
-
- .fieldset {
-     text-align: center;
  }
 
 

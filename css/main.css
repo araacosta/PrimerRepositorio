@@ -1,3 +1,70 @@
+/*condicionales*/
+body {
+  background-color: red; }
+
+/*bucles*/
+.galeria-1 {
+  background-position: -8px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  display: inline-block; }
+
+.galeria-2 {
+  background-position: -8px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  display: inline-block; }
+
+.galeria-3 {
+  background-position: -8px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  display: inline-block; }
+
+/*maps*/
+.footerTienda {
+  background-color: violet;
+  text-align: center;
+  font-size: 15px;
+  padding: 1rem; }
+
+.politicadevolucion {
+  text-align: center;
+  font-size: 15px;
+  padding: 1rem; }
+
+/*extend*/
+.btn-primary, .btn-primaryAceptar, .btn-primaryCancelar {
+  width: 200px;
+  height: 50px;
+  background-color: #b9548b;
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid black; }
+
+.btn-primaryAceptar {
+  background-color: green; }
+
+.btn-primaryCancelar {
+  background-color: red; }
+
+/*Mixin*/
+.imagen {
+  width: 500px;
+  height: 300px; }
+
+.footerTienda {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
 .menuPrincipal {
   display: flex;
   flex-direction: row;
@@ -9,7 +76,7 @@
     .menuPrincipal ul li {
       list-style: none;
       display: inline-block;
-      background-color: $colorTerciario;
+      background-color: black;
       padding: 0.6rem;
       border-radius: 1rem;
       margin: 0 10px 0 10px; }
@@ -21,42 +88,77 @@
 .nav-item {
   font-weight: bold; }
 
-.principal__titulo {
-  font-family: 'Alegreya Sans SC', sans-serif;
+.tituloContacto {
   text-align: center;
   color: black;
-  font-size: 70px;
-  padding: 20px;
+  font-size: 30px;
+  padding: 10px;
   border-style: solid; }
 
-h2 {
-  text-align: center;
-  color: #1c2323;
-  font-size: 20px;
-  text-decoration: solid;
-  padding: 10px; }
+.sectionContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center; }
 
-.productosDestacados {
+.galeria {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.426);
-  color: #fff;
-  padding: 10px;
-  animation-name: color;
-  animation-duration: 5s;
-  animation-delay: 3s;
-  animation-iteration-count: infinite; }
+  margin: 10px; }
+  .galeria .foto1 {
+    background-image: url(../multimedia/daniel-olah-UVRz6qJO_qA-unsplash.jpg);
+    background-position: -8px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    display: inline-block; }
+  .galeria .foto2 {
+    background-image: url(../multimedia/look.jpg);
+    background-position: -8px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    display: inline-block; }
+  .galeria .foto3 {
+    background-image: url(../multimedia/mahdi-chaghari-RfOBNTnDmJc-unsplash.jpg);
+    background-position: -8px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    display: inline-block; }
 
-@keyframes color {
-  0% {
-    color: #fff; }
-  20% {
-    color: darkgray; }
-  50% {
-    color: black; }
-  70% {
-    color: darkgray; }
-  100% {
-    color: #fff; } }
+html {
+  font-size: 62, 5%; }
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: antiquewhite; }
+
+.menuPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .menuPrincipal img {
+    height: 150px; }
+  .menuPrincipal ul {
+    list-style-type: none; }
+    .menuPrincipal ul li {
+      list-style: none;
+      display: inline-block;
+      background-color: black;
+      padding: 0.6rem;
+      border-radius: 1rem;
+      margin: 0 10px 0 10px; }
+    .menuPrincipal ul a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400; }
+
+.nav-item {
+  font-weight: bold; }
 
 .galeria {
   text-align: center;
@@ -90,8 +192,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 40px 1fr;
-  grid-template-areas: "quieneSomos MediosPago contacto"
- "somosEsto efectivo datoscontacto";
+  grid-template-areas: "quieneSomos MediosPago contacto" "somosEsto efectivo datoscontacto";
   justify-content: center;
   align-items: center;
   justify-items: center;
@@ -124,9 +225,7 @@ h2 {
 .footerTienda {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "p"
- "redesSociales"
- "copyright";
+  grid-template-areas: "p" "redesSociales" "copyright";
   justify-content: center;
   align-items: center;
   justify-items: center; }

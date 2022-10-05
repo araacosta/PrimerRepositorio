@@ -1,0 +1,11 @@
+.politicadevolucion {
+    text-align: center;
+    font-size: 30px;
+    background-color: $colorTerciario;
+    color: $colorSecundario;
+    padding: 10px;
+    animation-name: color;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}

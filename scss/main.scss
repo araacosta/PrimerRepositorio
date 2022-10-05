@@ -1,8 +1,17 @@
+@import "variables";
 @import "index";
 @import "menu";
 @import "contacto";
-@import "variables";
 @import "productoDestacado";
+
+html {
+    font-size: 62, 5%;
+}
+
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $colorPrincipal;
+}
 
 .menuPrincipal  {
     display: flex;
@@ -39,15 +48,6 @@
 .nav-item {
     font-weight: bold;
 }
-
-h2 {
-    text-align: center;
-    color: rgb(28, 35, 35);
-    font-size: 20px;
-    text-decoration: solid;
-    padding: 10px;
-}
-
 
 .galeria {
     text-align: center;
