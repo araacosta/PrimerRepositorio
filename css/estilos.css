@@ -250,6 +250,13 @@
      animation-iteration-count: infinite;
  }
 
+ .parrafo_politicas {
+    font-size: 17px;
+    padding: 20px;
+    text-align: left;
+
+ }
+
  .tituloContacto {
      text-align: center;
      color: black;
