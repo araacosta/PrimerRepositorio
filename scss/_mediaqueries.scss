@@ -1,0 +1,20 @@
+/* TABLET */
+@media (max-width: 768px) {
+    .justify-content-around {
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+}
+
+
+/*mobile*/
+@media (max-width:500px) {
+    .div-producto {
+        display: flex;
+        flex-direction: row;
+    }
+}

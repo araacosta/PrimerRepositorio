@@ -8,7 +8,8 @@
     <title>Contacto | Zone Clothing</title>
     <meta name="keywords" content="indumentaria, ropa, looks, moda, mujer, contacto, comunicate, direccion, telefono">
 
-    <meta name="description" content="Contactanos a traves de nuestras redes sociales, y nos pondremos en contacto con vos">
+    <meta name="description"
+        content="Contactanos a traves de nuestras redes sociales, y nos pondremos en contacto con vos">
 
     <link rel="shortcut icon" href="../multimedia/LogoSample.jpg" type="image/x-icon">
 
@@ -59,37 +60,20 @@
             <article class="col-md-6">
                 <form class="row g-3">
                     <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+                        <label for="name">Nombre:</label>
+                        <input type="text" class="form-control" id="name">
                     </div>
                     <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="inputPassword4">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email">
                     </div>
                     <div class="col-12">
-                        <label for="inputAddress" class="form-label">Direccion</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        <label for="phone">Teléfono (Opcional)</label>
+                        <input type="text" class="form-control" id="phone">
                     </div>
                     <div class="col-12">
-                        <label for="inputAddress2" class="form-label">Direccion 2</label>
-                        <input type="text" class="form-control" id="inputAddress2"
-                            placeholder="Apartment, studio, or floor">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputCity" class="form-label">Ciudad</label>
-                        <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="inputState" class="form-label">Pais</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Argentina</option>
-                            <option>Paraguay</option>
-                            <option>Chile</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2">
-                        <label for="inputZip" class="form-label">C.P</label>
-                        <input type="text" class="form-control" id="inputZip">
+                        <label for="message">Mensaje (Opcional):</label>
+                        <textarea id="message" name="message" class="form-control" rows="7"></textarea>
                     </div>
                     <div class="col-12">
                         <div class="form-check">
@@ -100,7 +84,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-secondary full-width-xs pull-right">Enviar</button>
                     </div>
                 </form>
             </article>

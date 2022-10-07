@@ -1,12 +1,14 @@
 @import "variables";
-@import "index";
 @import "menu";
 @import "contacto";
 @import "productoDestacado";
+@import "nosotros";
+@import "mediaqueries"
 
 html {
     font-size: 62, 5%;
 }
+
 
 .body{
     font-family: Arial, Helvetica, sans-serif;
@@ -92,48 +94,6 @@ html {
     }
 }
 
-.menufinal {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 40px 1fr;
-    grid-template-areas: "quieneSomos MediosPago contacto"
-        "somosEsto efectivo datoscontacto";
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    margin: 30px;
-
-    .quieneSomos h1 {
-        grid-area: quieneSomos;
-        font-size: 1, 5rem;
-    }
-
-    .MediosPago h1 {
-        grid-area: MediosPago;
-        font-size: 1, 5rem;
-    }
-
-    .contacto h1 {
-        grid-area: contacto;
-        font-size: 1, 5rem;
-    }
-
-    .somosEsto {
-        grid-area: somosEsto;
-        font-size: 1rem;
-    }
-
-    .efectivo {
-        grid-area: efectivo;
-        font-size: 1rem;
-    }
-
-    .datoscontacto div {
-        grid-area: datoscontacto;
-        font-size: 1rem;
-    }
-}
-
 .main {
     display: flex;
     flex-direction: row;
@@ -190,4 +150,12 @@ html {
     .whatsapp img {
         width: 50px;
     }
+
+.alert-success{
+        margin: 1rem;
+     }
+ 
+.g-3{
+    padding-block-end: 2rem;
+}
 }

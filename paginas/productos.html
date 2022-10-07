@@ -135,21 +135,57 @@
         </div>
     </section>
 
-    <fieldset class="fieldset">
-        <legend>Datos de envio</legend>
-        <label for="direccion">Direccion:</label>
-        <input type="text" name="direccion">
-
-        <label for="numero">Telefono:</label>
-        <input type="numer" name="numero">
-
-        <label for="pais">Pais</label>
-        <select name="pais">
-            <option value="ARG">ARG</option>
-            <option value="URU">URU</option>
-            <option value="PER">PER</option>
-        </select>
-    </fieldset>
+    <section class="container-fluid mb-5">
+        <h2 class="text-center h3 mt-4 mb-4">Datos de envio</h2>
+        <div class="row">
+            <article class="col-md-6">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Direccion</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Calle principal">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Direccion 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Departamento, casa, o piso">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Pais</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Argentina</option>
+                            <option>Paraguay</option>
+                            <option>Chile</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">C.P</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Acepto los términos y condiciones
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </article>
 
     <footer class="footerTienda">
         <p>Seguinos en las redes!</p>

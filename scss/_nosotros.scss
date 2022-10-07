@@ -1,0 +1,40 @@
+.quienessomos {
+    text-align: center;
+    font-size: 30px;
+    background-color:$colorTerciario;
+    color: $colorSecundario;
+    padding: 10px;
+    animation-name: color;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+.sectionNosotros {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas: "img p";
+    justify-content: center;
+    align-items: flex-start;
+    justify-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+
+    img {
+        grid-area: img;
+    }
+
+    p {
+        grid-area: p;
+        text-align: left;
+
+    }
+
+    .fotolocal {
+        background-position: -8px center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+   
+}
