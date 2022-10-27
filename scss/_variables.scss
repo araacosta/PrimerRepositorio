@@ -35,7 +35,7 @@ body{
 
 /*maps*/
 $estilos:(
-    color: violet,
+    color: sienna,
     alineacion: center,
     fuente: 15px,
     padding: 1rem
@@ -55,6 +55,13 @@ $estilos:(
     padding: map-get($estilos, padding);
 }
 
+.btn-primary {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, alineacion);
+    font-size: map-get($estilos,fuente);
+    padding: map-get($estilos, padding);
+}
+
 /*extend*/
 .btn-primary{
     width: 200px;
@@ -66,15 +73,6 @@ $estilos:(
     border: 1px solid black;
 }
 
-.btn-primaryAceptar{
-    @extend .btn-primary;
-    background-color: green;
-}
-
-.btn-primaryCancelar{
-    @extend .btn-primary;
-    background-color: red;
-}
 
 /*Mixin*/
 @mixin sizes ($ancho, $alto){

@@ -9,9 +9,20 @@
     animation-delay: 3s;
     animation-iteration-count: infinite;
 
-    .parrafo_politicas {
+    .containerParrafo {
         font-size: 17px;
+        margin: 20px;
         padding: 20px;
-        text-align: left;
+    }
+
+    .fotolocal {
+        background-position: -8px center;
+        background-repeat: no-repeat;
+        background-size: cover;
+   
+   
+        width: 400px;
+        height: 400px;
+   
     }
 }

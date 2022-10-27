@@ -8,32 +8,6 @@
      background-color: antiquewhite;
  }
 
- .menuPrincipal {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
- }
-
- .menuPrincipal ul {
-     list-style-type: none;
- }
-
- .menuPrincipal ul li {
-     list-style: none;
-     display: inline-block;
-     background-color: black;
-     padding: 0.6rem;
-     border-radius: 1rem;
-     margin: 0 10px 0 10px;
-
- }
-
- .menuPrincipal ul li a {
-     text-decoration: none;
-     color: #fff;
-     font-weight: 400;
- }
-
  .menuPrincipal img {
      height: 150px;
  }
@@ -42,29 +16,13 @@
      font-weight: bold;
  }
 
-
- .principal__titulo {
-     font-family: 'Alegreya Sans SC', sans-serif;
-     text-align: center;
-     color: black;
-     font-size: 70px;
-     padding: 20px;
-     border-style: solid;
-
-
- }
-
- h2 {
-     text-align: center;
-     color: rgb(28, 35, 35);
-     font-size: 20px;
-     text-decoration: solid;
-     padding: 10px;
+ .bg-navbar {
+     background-color: antiquewhite;
  }
 
  .productosDestacados {
      text-align: center;
-     background-color: rgba(0, 0, 0, 0.426);
+     background-color: rgba(151, 100, 12, 0.737);
      color: #fff;
      padding: 10px;
      animation-name: color;
@@ -79,7 +37,7 @@
      }
 
      20% {
-         color: darkgray;
+         color: gray;
      }
 
      50% {
@@ -87,106 +45,12 @@
      }
 
      70% {
-         color: darkgray
+         color: gray;
      }
 
      100% {
          color: #fff;
      }
- }
-
- .galeria {
-     text-align: center;
-     margin: 10px;
- }
-
- .foto1 {
-     background-image: url(../multimedia/daniel-olah-UVRz6qJO_qA-unsplash.jpg);
-     background-position: -8px center;
-     background-repeat: no-repeat;
-     background-size: cover;
-
-     width: 400px;
-     height: 400px;
-
-     display: inline-block;
- }
-
- .foto2 {
-     background-image: url(../multimedia/look.jpg);
-     background-position: -8px center;
-     background-repeat: no-repeat;
-     background-size: cover;
-
-     width: 400px;
-     height: 400px;
-
-     display: inline-block;
-
- }
-
- .foto3 {
-     background-image: url(../multimedia/mahdi-chaghari-RfOBNTnDmJc-unsplash.jpg);
-     background-position: -8px center;
-     background-repeat: no-repeat;
-     background-size: cover;
-
-     width: 400px;
-     height: 400px;
-
-     display: inline-block;
-
- }
-
- /*.menufinal {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     grid-template-rows: 40px 1fr;
-     grid-template-areas: "quieneSomos MediosPago contacto"
-         "somosEsto efectivo datoscontacto";
-     justify-content: center;
-     align-items: center;
-     justify-items: center;
-     margin: 30px;
- }
-
- .quieneSomos h1 {
-     grid-area: quieneSomos;
-     font-size: 1, 5rem;
- }
-
- .MediosPago h1 {
-     grid-area: MediosPago;
-     font-size: 1, 5rem;
- }
-
- .contacto h1 {
-     grid-area: contacto;
-     font-size: 1, 5rem;
- }
-
- .somosEsto {
-     grid-area: somosEsto;
-     font-size: 1rem;
- }
-
- .efectivo {
-     grid-area: efectivo;
-     font-size: 1rem;
- }
-
- .datoscontacto div {
-     grid-area: datoscontacto;
-     font-size: 1rem;
- }
-*/
-
- .main {
-     display: flex;
-     flex-direction: row;
-     justify-content: flex-end;
-     margin: 20px;
-
  }
 
  .footerTienda {
@@ -242,7 +106,7 @@
  .politicadevolucion {
      text-align: center;
      font-size: 30px;
-     background-color: rgba(0, 0, 0, 0.426);
+     background-color: rgba(151, 100, 12, 0.737);
      color: #fff;
      padding: 10px;
      animation-name: color;
@@ -251,19 +115,10 @@
      animation-iteration-count: infinite;
  }
 
- .parrafo_politicas {
-    font-size: 17px;
-    padding: 20px;
-    text-align: left;
-
- }
-
- .tituloContacto {
-     text-align: center;
-     color: black;
-     font-size: 30px;
-     padding: 10px;
-     border-style: solid;
+ .containerParrafo {
+     font-size: 17px;
+     margin: 20px;
+     padding: 20px;
  }
 
  .fotolocal {
@@ -280,7 +135,7 @@
  .tituloProductos {
      text-align: center;
      font-size: 30px;
-     background-color: rgba(0, 0, 0, 0.426);
+     background-color: rgba(151, 100, 12, 0.737);
      color: #fff;
      padding: 10px;
      animation-name: color;
@@ -367,7 +222,7 @@
  .quienessomos {
      text-align: center;
      font-size: 30px;
-     background-color: rgba(0, 0, 0, 0.426);
+     background-color: rgba(151, 100, 12, 0.737);
      color: #fff;
      padding: 10px;
      animation-name: color;
@@ -379,7 +234,7 @@
  .sectionNosotros {
      display: grid;
      grid-template-columns: 0.5fr 1fr;
-     grid-template-areas: "img p";
+     grid-template-areas: "img div";
      justify-content: center;
      align-items: flex-start;
      justify-items: flex-start;
@@ -391,8 +246,8 @@
      grid-area: img;
  }
 
- .sectionNosotros p {
-     grid-area: p;
+ .sectionNosotros div {
+     grid-area: div;
      text-align: left;
 
  }
@@ -443,38 +298,36 @@
      justify-items: center;
  }
 
- .alert-success{
-    margin: 1rem;
+ .alert-success {
+     margin: 1rem;
  }
 
- .g-3{
-    padding-block-end: 2rem;
-}
+ .g-3 {
+     padding-block-end: 2rem;
+ }
+
+ :not(.btn-check)+.btn:hover {
+     background-color: palevioletred;
+
+ }
+
+ [type=submit]:not(:disabled):hover {
+     background-color: palevioletred;
+ }
+
 
  /* TABLET */
 
  @media (max-width: 768px) {
-    .justify-content-around {
-        justify-content: space-around;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .card {
-        margin-top: 1rem;
-    }
-
-     .headerIndex {
-         flex-direction: column;
-         text-align: center;
+     .justify-content-around {
+         justify-content: space-around;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
      }
 
-     .headerIndex nav ul li {
-         display: block;
-         margin-top: 0.3rem;
-         justify-content: center;
-         justify-items: center;
+     .card {
+         margin-top: 1rem;
      }
 
      .menuPrincipal img {
@@ -494,7 +347,7 @@
          grid-template-areas:
              "producto1 producto2"
              "producto3 producto4"
-            "producto5 producto6";
+             "producto5 producto6";
          margin-top: 2rem;
          justify-items: center;
          gap: 1rem;
@@ -529,43 +382,18 @@
 
  /*MOBILE*/
 
- @media (max-width:500px) {
-     .headerIndex {
-         flex-direction: column;
-         text-align: center;
-     }
-
-     .headerIndex nav ul li {
-         display: block;
-         margin-top: 0.3rem;
-         justify-content: center;
-         justify-items: center;
-     }
-
-     .menuPrincipal img {
-         display: none;
-     }
-
-     .bodyIndex {
-         margin: 3rem;
-     }
-
-     .mainIndex {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         justify-items: center;
-     }
-
+ @media (max-width:500px){
      /*Productos*/
-     .sectionProductos {
+     .div-productos {
          display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         grid-template-rows: repeat(3, 1fr);
-         grid-template-areas: "producto1 producto2"
-             "producto3 producto4"
-             "producto5 producto6";
+         grid-template-columns: repeat(1, 1fr);
+         grid-template-rows: repeat(6, 1fr);
+         grid-template-areas: "producto1"
+             "producto2"
+             "producto3"
+             "producto4"
+             "producto5"
+             "producto6";
      }
 
      .producto1 {
@@ -592,18 +420,27 @@
          grid-area: producto6;
      }
 
-     /*Contacto*/
-     .sectionContacto {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         justify-items: center;
+     .form-control {
+         display: block;
+         width: 60%;
      }
 
-
-
-     .bg-navbar {
-         background-color: antiquewhite;
+     .form-select {
+         display: block;
+         width: 60%;
      }
-    }
+
+     .mb-5 {
+         width: 70%;
+         margin: 30px
+     }
+
+     .mt-mobile {
+         margin-top: 3rem;
+     }
+
+     .fotolocal {
+         width: 250px;
+         height: 250px;
+     }
+ }

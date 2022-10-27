@@ -1,35 +1,5 @@
-/*condicionales*/
-body {
-  background-color: red; }
-
-/*bucles*/
-.galeria-1 {
-  background-position: -8px center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 400px;
-  height: 400px;
-  display: inline-block; }
-
-.galeria-2 {
-  background-position: -8px center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 400px;
-  height: 400px;
-  display: inline-block; }
-
-.galeria-3 {
-  background-position: -8px center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 400px;
-  height: 400px;
-  display: inline-block; }
-
 /*maps*/
 .footerTienda {
-  background-color: violet;
   text-align: center;
   font-size: 15px;
   padding: 1rem; }
@@ -40,20 +10,24 @@ body {
   padding: 1rem; }
 
 /*extend*/
-.btn-primary, .btn-primaryAceptar, .btn-primaryCancelar {
+.btn-primary{
   width: 200px;
   height: 50px;
-  background-color: #b9548b;
+  background-color:rosybrown;
   text-align: center;
   color: black;
+  font-weight: bold;
   border-radius: 10px;
   border: 1px solid black; }
 
-.btn-primaryAceptar {
-  background-color: green; }
+:not(.btn-check)+.btn:hover {
+  background-color: palevioletred;
+}
 
-.btn-primaryCancelar {
-  background-color: red; }
+[type=submit]:not(:disabled):hover {
+  background-color: palevioletred;
+  }
+
 
 /*Mixin*/
 .imagen {
@@ -65,31 +39,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap; }
 
-.menuPrincipal {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-
-.menuPrincipal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  .menuPrincipal img {
-    height: 150px; }
-  .menuPrincipal ul {
-    list-style-type: none; }
-    .menuPrincipal ul li {
-      list-style: none;
-      display: inline-block;
-      background-color: black;
-      padding: 0.6rem;
-      border-radius: 1rem;
-      margin: 0 10px 0 10px; }
-    .menuPrincipal ul a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 400; }
-
 .nav-item {
   font-weight: bold; }
 
@@ -100,41 +49,6 @@ body {
   padding: 10px;
   border-style: solid; }
 
-.sectionContacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  justify-items: center; }
-
-.galeria {
-  text-align: center;
-  margin: 10px; }
-  .galeria .foto1 {
-    background-image: url(../multimedia/daniel-olah-UVRz6qJO_qA-unsplash.jpg);
-    background-position: -8px center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 400px;
-    display: inline-block; }
-  .galeria .foto2 {
-    background-image: url(../multimedia/look.jpg);
-    background-position: -8px center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 400px;
-    display: inline-block; }
-  .galeria .foto3 {
-    background-image: url(../multimedia/mahdi-chaghari-RfOBNTnDmJc-unsplash.jpg);
-    background-position: -8px center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 400px;
-    display: inline-block; }
-
 html {
   font-size: 62, 5%; }
 
@@ -142,95 +56,16 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   background-color: antiquewhite; }
 
-.menuPrincipal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  .menuPrincipal img {
-    height: 150px; }
-  .menuPrincipal ul {
-    list-style-type: none; }
-    .menuPrincipal ul li {
-      list-style: none;
-      display: inline-block;
-      background-color: black;
-      padding: 0.6rem;
-      border-radius: 1rem;
-      margin: 0 10px 0 10px; }
-    .menuPrincipal ul a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 400; }
 
 .nav-item {
   font-weight: bold; }
 
-.galeria {
-  text-align: center;
-  margin: 10px; }
-  .galeria .foto1 {
-    background-image: url(../multimedia/daniel-olah-UVRz6qJO_qA-unsplash.jpg);
-    background-position: -8px center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 400px;
-    display: inline-block; }
-  .galeria .foto2 {
-    background-image: url(../multimedia/look.jpg);
-    background-position: -8px center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 400px;
-    display: inline-block; }
-  .galeria .foto3 {
-    background-image: url(../multimedia/mahdi-chaghari-RfOBNTnDmJc-unsplash.jpg);
-    background-position: -8px center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 400px;
-    display: inline-block; }
-
-.menufinal {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 40px 1fr;
-  grid-template-areas: "quieneSomos MediosPago contacto" "somosEsto efectivo datoscontacto";
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  margin: 30px; }
-  .menufinal .quieneSomos h1 {
-    grid-area: quieneSomos;
-    font-size: 1, 5rem; }
-  .menufinal .MediosPago h1 {
-    grid-area: MediosPago;
-    font-size: 1, 5rem; }
-  .menufinal .contacto h1 {
-    grid-area: contacto;
-    font-size: 1, 5rem; }
-  .menufinal .somosEsto {
-    grid-area: somosEsto;
-    font-size: 1rem; }
-  .menufinal .efectivo {
-    grid-area: efectivo;
-    font-size: 1rem; }
-  .menufinal .datoscontacto div {
-    grid-area: datoscontacto;
-    font-size: 1rem; }
-
-.main {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin: 20px; }
-
 .footerTienda {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "p" "redesSociales" "copyright";
+  grid-template-areas: "p"
+ "redesSociales"
+ "copyright";
   justify-content: center;
   align-items: center;
   justify-items: center; }
@@ -246,7 +81,7 @@ html {
   .footerTienda .footerTienda p {
     margin-top: 1rem; }
   .footerTienda .footerTienda div {
-    margin: 0 10px 0 10px; }
+    margin: 0 10px 0 10px; } 
   .footerTienda .whatsapp {
     position: fixed;
     right: 20px;
@@ -254,4 +89,4 @@ html {
   .footerTienda .redesSociales img {
     width: 50px; }
   .footerTienda .whatsapp img {
-    width: 50px; }
+    width: 50px; } 
